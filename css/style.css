@@ -43,3 +43,22 @@ justify-content: space-around;
     height: 200px;
     border-radius: 20%;
 }
+.menu a{
+    text-decoration: none;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+}
+.menu nav li {
+    padding: 15px;
+    width: 100px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+.menu li a:hover{
+    color: blue;
+}
