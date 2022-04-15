@@ -14,7 +14,6 @@
 .nombresgrupo{
     display: flex;
     flex-direction: row;
-
     font-family: 'Bebas Neue', cursive; 
     font-size: 15px;
     color: aliceblue;
