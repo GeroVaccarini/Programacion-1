@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  href="./css/style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -14,33 +14,35 @@
 
 <body>
     <main>
-        <header>
-            <img class="logo" src="./img/logo.png" alt="">
-            
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="genres.html">Generos</a></li>
-                <li><a href="playlist.html">Playlist</a></li>
-                <li>
-                    <form action="search-result.html" method="GET"><input type="text" name="busqueda"
-                            placeholder="buscar..."> <button type="submit"></button> </form>
-                </li>
-            </ul>
-        </nav>
-     
+        <header class="contenedor">
+            <img src="./img/logo.png" alt="">
+            <nav> 
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="genres.html">Generos</a></li>
+                    <li><a href="playlist.html">Playlist</a></li>
+                    <li>
+                        <form action="search-result.html" method="GET"><input type="text" name="busqueda"
+                                placeholder="buscar..."> <button type="submit"></button></form>
+                    </li>
+                </ul>
+            </nav>
         </header>
+       
+       
         <section>
             <h1 class="titulos">Top Canciones</h1>
+        </section>
+        <section class="contenedor">
             <article class="item">
-                <img src="./img/top-track/ayer-bhavi.jpeg" alt=""> 
-                <h2><a href="detail-track.html">Ayer</a></h2>
-                <ul>
-                    <li><a href="detail-artist.html">Artista:Bhavi</a></li>
-                    <li>Año:2022</li>
-                </ul>
-               
-               
+                <img src="./img/top-track/ayer-bhavi.jpeg" alt="">
+                <h2 class="nombres"><a href="detail-track.html">Ayer</a></h2>
+                
+                    <p><a href="detail-artist.html">Artista: Bhavi</a></p>
+                    <p>Año:2022</p>
+              
+
+
             </article>
             <article class="item">
                 <img src="/img/top-track/emilia-420.jpeg">
@@ -49,7 +51,7 @@
                     <li><a href="detail-artist.html">Artista:Emilia</a></li>
                     <li>Año:2022</li>
                 </ul>
-               
+
             </article>
             <article class="item">
                 <img src="./img/top-track/gabana-taichu.png">
@@ -58,7 +60,7 @@
                     <li><a href="detail-artist.html">Artista:Taichu</a></li>
                     <li>Año:2022</li>
                 </ul>
-               
+
             </article>
             <article class="item">
                 <img src="./img/top-track/paulo-plana.jpeg">
@@ -75,19 +77,20 @@
                     <li><a href="detail-artist.html">Artista:Tini & L-Gante</a></li>
                     <li>Año:2022</li>
                 </ul>
-               
+
             </article>
         </section>
         <section>
-            <h1 class="titulos" >Top Albums</h1>
+            <h1 class="titulos">Top Albums</h1>
+        </section>
+        <section class="contenedor">
             <article class="item">
                 <img src="./img/Top-album/JhayCortez-Timelezz.jpeg">
                 <h2><a href="detail-album.html">Timelezz</a></h2>
-                <ul>
-                    <li><a href="detail-artist.html">Artista:Jhay Cortez</a></li>
-                    <li>Año:2022</li>
-                </ul>
-               
+                    <p><a href="detail-artist.html">Artista: Jhay Cortez</a></p>
+                    <p>Año:2022</p>
+                
+
             </article>
             <article class="item">
                 <img src="./img/Top-album/kargolg-album.jpg">
@@ -96,90 +99,94 @@
                     <li><a href="detail-artist.html">Artista:Karol G</a></li>
                     <li>Año:2022</li>
                 </ul>
-               
+
             </article>
-            <article>
+            <article class="item">
                 <img src="./img/Top-album/mariabecerra-animal.jpeg">
                 <h2><a href="detail-album.html">Animal</a></h2>
                 <ul>
                     <li><a href="detail-artist.html">Artista:Maria Becerra</a></li>
                     <li>Año:2022</li>
                 </ul>
-               
+
             </article>
-            <article>
+            <article class="item">
                 <img src="./img/Top-album/odisea-ozuna.jpeg">
                 <h2><a href="detail-album.html">Odisea</a></h2>
                 <ul>
                     <li><a href="detail-artist.html">Artista:Ozuna</a></li>
                     <li>Año:2022</li>
                 </ul>
-               
+
             </article>
         </section>
         <section>
             <h1 class="titulos">Top Artists</h1>
-            <article>
+        </section>
+        <section class="contenedor">
+            <article class="item">
                 <img src="./img/tops-artistas/bhavi.jpeg">
                 <h2><a href="detail-artist.html">Bhavi</a></h2>
                 <ul>
                     <li><a href="detail-track.html">Rep:105k</a></li>
                     <li>Año:2022</li>
                 </ul>
-               
+
             </article>
-            <article>
+            <article class="item">
                 <img src="./img/tops-artistas/conejo malo.jpeg">
                 <h2><a href="detail-artist.html">Bad Bunny</a></h2>
                 <ul>
                     <li><a href="detail-track.html">Rep:1.5M</a></li>
                     <li>Año:2022</li>
                 </ul>
-               
+
             </article>
-            <article>
+            <article class="item">
                 <img src="./img/tops-artistas/emilia.jpeg">
                 <h2><a href="detail-artist.html">Emilia</a></h2>
                 <ul>
                     <li><a href="detail-artist.html">Rep:1.8M</a></li>
                     <li>Año:2022</li>
                 </ul>
-               
+
             </article>
-            <article>
+            <article class="item">
                 <img src="./img/tops-artistas/paulolondra.jpeg">
                 <h2><a href="detail-artist.html">Paulo Londra</a></h2>
                 <ul>
                     <li><a href="detail-artist.html">Rep:1.7M</a></li>
                     <li>Año:2022</li>
                 </ul>
-               
+
             </article>
-            <article>
+            <article class="item">
                 <img src="./img/tops-artistas/taichu.jpeg">
-                <h2><a href="detail-artist.html">TAICHU</a></h2>
+                <h2 class="nombres"><a href="detail-artist.html">TAICHU</a></h2>
                 <ul>
                     <li><a href="detail-artist.html">Rep:100M</a></li>
                     <li>Año:2022</li>
                 </ul>
-               
+
             </article>
         </section>
     </main>
     <footer>
 
-<section>
-    <img src="./img/Logo.png">
-<article class="listanombre">
- <nav class="nombresgrupo">
-    <ul>
-        <li>Geronimo Vaccarini |</li>
-        <li>Macs Alfonso Zimmermann |</li>
-        <li>Paloma Pedrazzoli</li>
-        </ul>
-        </nav>
-</article>
-</section>
+        <section>
+            <img class="logo" src="./img/Logo.png">
+        </section>
+        <section class="contenedor">
+            <article class="listanombre">
+                <nav class="nombresgrupo">
+                    <ul>
+                        <li>Geronimo Vaccarini |</li>
+                        <li>Macs Alfonso Zimmermann |</li>
+                        <li>Paloma Pedrazzoli</li>
+                    </ul>
+                </nav>
+            </article>
+        </section>
     </footer>
 </body>
 
