@@ -9,7 +9,19 @@
 }
 
 /* PAGINA PRINCIPAL - INDEX */
+.header{
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 
+
+}
+.logo {
+    height: 150px;
+    
+   
+
+}
 
 .nombresgrupo ul{
     display: flex;
