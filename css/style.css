@@ -5,6 +5,7 @@
 }
 header{
     height: 150px;
+    flex-direction: row;
     
 
 }
@@ -15,7 +16,6 @@ header img{
 .menu ul{
    font-family: 'Bebas Neue', cursive;
   padding: 30px;
-  flex-direction: row;
   margin: 2%;
     justify-content: space-between;
   
