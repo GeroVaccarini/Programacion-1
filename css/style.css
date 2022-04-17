@@ -98,3 +98,10 @@ footer{
     flex-direction: row;
     justify-content: space-between;
 }
+/* DETALLE ARTISTA */
+.itemdetalle img {
+    height: 300px;
+    width: 400px;
+    border-radius: 5px;
+    padding: 30px;
+}
