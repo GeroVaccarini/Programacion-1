@@ -88,6 +88,21 @@ p {
     height: 200px;
     border-radius: 20%;
 }
+.itemcaja h2{
+    border: 1px solid grey;
+    
+}
+.itemcaja a{
+    color: aliceblue;
+    
+}
+.itemcaja a:hover{
+    color: orange;
+    
+}
+.itemcaja p{
+    border: 1px solid orange;
+}
 
 .menu li a:hover{
     color: orange;
