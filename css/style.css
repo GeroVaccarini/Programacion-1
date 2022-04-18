@@ -196,3 +196,26 @@ margin-left: 10%;
 color: aliceblue;
 border: 1px solid orange;
 }
+
+/* GENEROS */
+
+.contenedorgenres{
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin: 2%;
+    padding: 0%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.itemgenres{
+    flex-direction: column;
+    justify-content: space-between;
+}
+.itemgenres img{ 
+
+width: 300px;
+height: 300px;
+border-radius: 20%;
+margin-left: 3%;
+}
