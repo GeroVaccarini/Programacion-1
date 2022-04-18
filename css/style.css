@@ -1,50 +1,55 @@
-
-
-
-*{  
+* {
     background-color: black;
-   
+
 }
-header{
+
+header {
     height: 150px;
     flex-direction: row;
-  
-    
+
+
 
 }
-header img{
-    height: 200px; 
+
+header img {
+    height: 200px;
 
 }
-.menu ul{
-   font-family: 'Bebas Neue', cursive;
-  padding: 30px;
-  margin: 2%;
+
+.menu ul {
+    font-family: 'Bebas Neue', cursive;
+    padding: 30px;
+    margin: 2%;
     justify-content: space-between;
-  
-  
+
+
 
 }
-form{
+
+form {
     border: 1px solid orange;
 }
-button{
+
+button {
     border-radius: 2%;
 }
-input{
-color: aliceblue;
-  }
-.fa-searchengin{
+
+input {
     color: aliceblue;
 }
 
-.menu a{
-        text-decoration: none;
-        color: white;
-        font-size: 30px;    
-       
-    }
-.menu{
+.fa-searchengin {
+    color: aliceblue;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+
+}
+
+.menu {
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
@@ -54,6 +59,7 @@ color: aliceblue;
     margin-top: 12%;
 
 }
+
 .contenedor {
     display: flex;
     box-sizing: border-box;
@@ -62,36 +68,39 @@ color: aliceblue;
     padding: 0%;
     font-family: 'Bebas Neue', cursive;
 }
+
 .item {
     margin: 2%;
     justify-content: space-between;
 }
-.item a{
+
+.item a {
     text-decoration: none;
 }
 
 article .nombres {
-    font-family: 'Bebas Neue', cursive; 
+    font-family: 'Bebas Neue', cursive;
     font-size: 25px;
     color: aliceblue;
     text-align: center;
 }
+
 p {
     color: orange;
-    text-align: center; 
-    
+    text-align: center;
+
 }
 
 
 .nombresgrupo {
-    font-family: 'Bebas Neue', cursive; 
+    font-family: 'Bebas Neue', cursive;
     font-size: 20px;
-    color: aliceblue;   
-    
-    
+    color: aliceblue;
+
+
 }
 
-.titulos{
+.titulos {
     color: aliceblue;
     font-family: 'Bebas Neue', cursive;
     font-size: 40px;
@@ -102,54 +111,61 @@ p {
 }
 
 
-.item img{
+.item img {
     width: 200px;
     height: 200px;
     border-radius: 20%;
 }
-.itemcaja h2{
+
+.itemcaja h2 {
     border: 1px solid grey;
-    
+
 }
-.itemcaja a{
+
+.itemcaja a {
     color: aliceblue;
-    
+
 }
-.itemcaja a:hover{
+
+.itemcaja a:hover {
     color: orange;
-    
+
 }
-.itemcaja p{
+
+.itemcaja p {
     border: 1px solid orange;
 }
 
-.menu li a:hover{
+.menu li a:hover {
     color: orange;
 }
 
-.contenedorfooter{
+.contenedorfooter {
     display: flex;
-   
+
 }
-.logofooter{
+
+.logofooter {
     margin-left: 40%;
 }
-.menufooter{
+
+.menufooter {
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin:10px 10px;
+    margin: 10px 10px;
     margin-bottom: 5%;
     margin-right: 5%;
     list-style-type: none;
-    }
-   .nombresgrupo{
-    font-family: 'Bebas Neue', cursive; 
+}
+
+.nombresgrupo {
+    font-family: 'Bebas Neue', cursive;
     font-size: 20px;
-    color: aliceblue; 
-   
-   }
+    color: aliceblue;
+
+}
 
 
 /* DETALLE ARTISTA */
@@ -158,143 +174,168 @@ p {
     height: 500px;
     width: 900px;
     border-radius: 70px;
-   margin-left: 190px;
+    margin-left: 190px;
 }
-.detalleartist{
+
+.detalleartist {
     display: flex;
     flex-direction: column;
-    
+
 }
-.detalleartist li{
-  color: aliceblue;
+
+.detalleartist li {
+    color: aliceblue;
     width: 75%;
     margin-left: 10%;
-    font-family: 'Bebas Neue', cursive; 
-   
-   
+    font-family: 'Bebas Neue', cursive;
+
+
 }
 
 /* DETALLE ALBUM */
-.contenedordetail{
+.contenedordetail {
     display: flex;
     flex-direction: row;
 }
+
 .contenedordetail img {
     height: 500px;
     width: 500px;
     margin-left: 20%;
     border-radius: 70px;
 }
-.albumgeneral{ 
-font-family: 'Bebas Neue', cursive; 
-padding: 5px 5px 5px 5px;
-margin-left: 10%;
+
+.albumgeneral {
+    font-family: 'Bebas Neue', cursive;
+    padding: 5px 5px 5px 5px;
+    margin-left: 10%;
 
 
 }
-.albumgeneral ul li{
+
+.albumgeneral ul li {
     list-style: none;
-color: aliceblue;
-border: 1px solid orange;
+    color: aliceblue;
+    border: 1px solid orange;
 
 }
-.albumgeneral ul li a{
-color: aliceblue;
-text-decoration: none;
+
+.albumgeneral ul li a {
+    color: aliceblue;
+    text-decoration: none;
 }
-.albumgeneral ul li a i:hover{
+
+.albumgeneral ul li a i:hover {
     color: orange;
 
 }
-.nombres{
+
+.nombres {
     text-decoration: none;
     border: 2px solid orange;
 }
 
 /* GENEROS */
 
-.contenedorgenres{
+.contenedorgenres {
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
     margin: 2%;
     padding: 0%;
     font-family: 'Bebas Neue', cursive;
-    
+
 }
 
-.itemgenres{
+.itemgenres {
     flex-direction: row;
     justify-content: space-between;
     width: 600px;
     text-align: center;
-    
-}
-.itemgenres img{ 
 
-width: 250px;
-height: 250px;
-border-radius: 20%;
-margin-left: 5%;
-justify-content: space-between;
+}
+
+.itemgenres img {
+
+    width: 250px;
+    height: 250px;
+    border-radius: 20%;
+    margin-left: 5%;
+    justify-content: space-between;
 }
 
 
 /* DETALLE TRACK */
 
-.itemtrack img{
+.itemtrack img {
     height: 500px;
     width: 300px;
     margin-left: 20%;
     border-radius: 70px;
 }
 
-.nombrestrack{
+.nombrestrack {
     color: aliceblue;
     width: 75%;
     margin-left: 10%;
     font-family: 'Bebas Neue', cursive;
-    
+
 }
-.nombrestrack a{
+
+.nombrestrack a {
     text-decoration: none;
 }
 
-.item img{
+.item img {
     width: 200px;
     height: 200px;
     border-radius: 20%;
 }
-.itemcaja h2{
+
+.itemcaja h2 {
     border: 1px solid grey;
-    
+
 }
-.cajadetail{
+
+.cajadetail {
     margin-left: 10%;
 }
-.cajadetail a{
+
+.cajadetail a {
     color: aliceblue;
-    
+
 }
-.cajadetail  a:hover{
+
+.cajadetail a:hover {
     color: orange;
-    
+
 }
-.cajadetail  p{
+
+.cajadetail p {
     border: 1px solid orange;
 }
 
 /* PLAYLIST */
-.itemplaylist{
+.itemplaylist {
     margin-left: 20%;
     width: 50%;
 }
+
 /* DETAIL GENRES */
 .nombresdetailg {
     color: aliceblue;
     border: 2px solid orange;
     padding: 5px 5px 5px 5px;
 }
-.nombresdetailg a{
+
+.nombresdetailg a {
     text-decoration: none;
+}
+
+
+@media (max-width: 420px) {
+
+}
+@media (min-width:801px)  {
+   
 }
