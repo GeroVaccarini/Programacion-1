@@ -100,8 +100,44 @@ footer{
 }
 /* DETALLE ARTISTA */
 .itemdetalle img {
-    height: 300px;
-    width: 400px;
-    border-radius: 5px;
-    padding: 30px;
+    height: 500px;
+    width: 1000px;
+    border-radius: 70px;
+   margin-left: 190px;
+}
+.detalleartist{
+    display: flex;
+    flex-direction: column;
+    
+}
+.detalleartist li{
+  color: aliceblue;
+    width: 75%;
+    margin-left: 10%;
+    font-family: 'Bebas Neue', cursive; 
+   
+   
+}
+
+/* DETALLE ALBUM */
+.contenedordetail{
+    display: flex;
+    flex-direction: row;
+}
+.contenedordetail img {
+    height: 500px;
+    width: 500px;
+    margin-left: 20%;
+    border-radius: 70px;
+}
+.albumgeneral{ 
+font-family: 'Bebas Neue', cursive; 
+padding: 5px 5px 5px 5px;
+margin-left: 10%;
+
+}
+.albumgeneral ul li{
+    list-style: none;
+color: aliceblue;
+border: 1px solid orange;
 }
