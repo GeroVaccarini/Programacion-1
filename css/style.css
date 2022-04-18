@@ -1,35 +1,198 @@
 
 
-* {
-    box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Bebas Neue', cursive;
+
+*{  
     background-color: black;
+   
+}
+header{
+    height: 150px;
+    flex-direction: row;
+  
+    
+
+}
+header img{
+    height: 200px; 
+
+}
+.menu ul{
+   font-family: 'Bebas Neue', cursive;
+  padding: 30px;
+  margin: 2%;
+    justify-content: space-between;
+  
+  
+
+}
+form{
+    border: 1px solid orange;
+}
+button{
+    border-radius: 2%;
+}
+input{
+color: aliceblue;
+  }
+.fa-searchengin{
+    color: aliceblue;
 }
 
-/* PAGINA PRINCIPAL - INDEX */
-
-
-.nombresgrupo{
+.menu a{
+        text-decoration: none;
+        color: white;
+        font-size: 30px;    
+       
+    }
+.menu{
     display: flex;
-    flex-direction: row;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    box-shadow: 0px 10px 10px -6px orange;
+    margin-top: 12%;
 
+}
+.contenedor {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin: 2%;
+    padding: 0%;
+    font-family: 'Bebas Neue', cursive;
+}
+.item {
+    margin: 2%;
+    justify-content: space-between;
+}
+.item a{
+    text-decoration: none;
+}
+
+article .nombres {
     font-family: 'Bebas Neue', cursive; 
-    font-size: 15px;
+    font-size: 25px;
+    color: aliceblue;
+    text-align: center;
+}
+p {
+    color: orange;
+    text-align: center; 
+    
+}
+
+
+.nombresgrupo {
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 20px;
+    color: aliceblue;   
+    
+    
+}
+
+.titulos{
+    color: aliceblue;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    margin: 100px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 10px 10px orange;
+    width: 210px;
+}
+
+
+.item img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+}
+.itemcaja h2{
+    border: 1px solid grey;
+    
+}
+.itemcaja a{
     color: aliceblue;
     
 }
-.menu ul{
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-justify-content: space-between;
+.itemcaja a:hover{
+    color: orange;
+    
+}
+.itemcaja p{
+    border: 1px solid orange;
+}
+
+.menu li a:hover{
+    color: orange;
+}
+
+.contenedorfooter{
+    display: flex;
+   
+}
+.logofooter{
+    margin-left: 40%;
+}
+.menufooter{
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:10px 10px;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    list-style-type: none;
+    }
+   .nombresgrupo{
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 20px;
+    color: aliceblue; 
+   
+   }
+
+
+/* DETALLE ARTISTA */
+
+.itemdetalle img {
+    height: 500px;
+    width: 900px;
+    border-radius: 70px;
+   margin-left: 190px;
+}
+.detalleartist{
+    display: flex;
+    flex-direction: column;
+    
+}
+.detalleartist li{
+  color: aliceblue;
+    width: 75%;
+    margin-left: 10%;
+    font-family: 'Bebas Neue', cursive; 
+   
+   
+}
+
+/* DETALLE ALBUM */
+.contenedordetail{
+    display: flex;
+    flex-direction: row;
+}
+.contenedordetail img {
+    height: 500px;
+    width: 500px;
+    margin-left: 20%;
+    border-radius: 70px;
+}
+.albumgeneral{ 
+font-family: 'Bebas Neue', cursive; 
+padding: 5px 5px 5px 5px;
+margin-left: 10%;
 
 }
-.item section{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between; 
+.albumgeneral ul li{
+    list-style: none;
+color: aliceblue;
+border: 1px solid orange;
 }
