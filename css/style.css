@@ -333,7 +333,13 @@ p {
 }
 
 
-@media (max-width: 420px) {
+@media screen and (max-width: 480px){
+   .contenedor {display: flex;
+flex-direction: column;}
+.menu{
+    display: flex;
+flex-direction: column;
+}
 
 }
 @media (min-width:801px)  {
