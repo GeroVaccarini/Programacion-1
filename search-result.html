@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <script src="https://kit.fontawesome.com/dd27ef0022.js" crossorigin="anonymous"></script>
     <title>Detail track</title>
 </head>
+
 <body>
     <main>
         <header class="contenedor">
@@ -21,8 +23,9 @@
                     <li><a href="genres.html">Generos</a></li>
                     <li><a href="playlist.html">Playlist</a></li>
                     <li>
-                        <form action="search-result.html" method="GET"><input type="text" id="formulario" name="busqueda"
-                                placeholder="buscar..."> <button type="submit"><i class="fa-brands fa-searchengin"></i></button></form>
+                        <form action="search-result.html" method="GET"><input type="text" id="formulario"
+                                name="busqueda" placeholder="buscar..."> <button type="submit"><i
+                                    class="fa-brands fa-searchengin"></i></button></form>
                     </li>
                 </ul>
             </nav>
@@ -30,26 +33,50 @@
         <section class="itemtrack">
             <h1 class="titulo"></h1>
             <h2 class="resultado"></h2>
-         
+
         </section>
         <section>
-            <article> 
-        <section class="contenedordetail">
-            <article  class="itemdetalle" id="image"> 
-            </article>
-            <article class="cajadetail">
-            <h2 class="nombrestrack"></h2>
-            <h2 class="nombrestrack" id="detalle-disco"></h2>
-            <p class="nombrestrack"></p>
-  
-     
-        </article>
-        </section>
-  
+            <article>
+                <section class="contenedordetail">
+                    <article class="cajadetail">
+                        <article class="lista">
 
-  
-<script src="../Programacion-1/js/search.js"></script>
-    
-        
+                            <nav class="nombrelista">
+                                <h2>Canciones</h2>
+                            </nav>
+                            <nav class="canciones">
+                            </nav>
+                        </article>
+
+                        <article class="lista">
+
+                            <nav class="nombrelista">
+                                 <h2>
+                                  Albumes 
+                                 </h2>
+                             </nav>
+                             <nav class="albums">
+                             </nav>
+                          </article>
+                
+                          <article class="lista">
+                              
+                            <nav class="nombrelista">
+                                 <h2>
+                                 Artistas
+                                 </h2>
+                             </nav>
+                             <nav class="artistas">
+                             </nav>  
+                          </article>
+                    </article>
+                </section>
+
+
+
+                <script src="../Programacion-1/js/search.js"></script>
+
+
 </body>
+
 </html>
