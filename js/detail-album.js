@@ -7,21 +7,21 @@ fetch(DetalleAlbum)
     .then(function (data) {
         console.log(data);
 
-        let datos = data.data
+      
         let section = document.querySelector(".detalle");
         let articles = "";
 
-        for (let i = 0; i < datos.length; i++) {
+        for (let i = 0; i <1; i++) {
             //construir un elemento de lista
             articles += `<article>
-                            <h1 class="Nombres">Nombre: ${datos[i].album.title}</h1>
-                        <img class="image" src="${datos[i].album.picture}" alt="">
+                            <h1 class="Nombres">Nombre: ${data.album.title}</h1>
+                        <img class="image" src="${data.album.picture}" alt="">
                         </article>
-                                <h2><a class="nombres" href="detail-artist.html">${datos[i].album.name}</a></h2>
-                                <p><a class="nombres" href="detail-artist.html"> Genero:${datos[i].album.genre}</a></p>
-                                <p>Lanzamiento del disco: ${datos[i].album.release_date}</p>
+                                <h2><a class="nombres" href="detail-artist.html">${data.artist.name}</a></h2>
+                                <p><a class="nombres" href="detail-artist.html"> Genero:${data.genre.name}</a></p>
+                                <p>Lanzamiento del disco: ${data.album.release_date}</p>
                                 <ol>
-                                    <li> <a href="playlist.html" type="submit">${datos[i].album.tracks}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
+                                    <li> <a href="playlist.html" type="submit">${tracks.data.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
                     </ol >`
                     
                                 }
