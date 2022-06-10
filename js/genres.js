@@ -1,29 +1,35 @@
-let qs = location.search; // atrapo todo lo que esta despues del html
-let datos = new URLSearchParams(qs);
-let ArtistDetail = datos.get('ArtistD');
 
-let buscador = document.querySelector('busc')
-let formulario = document.getElementById('formulario')
-console.log(formulario);
-buscador.addEventListener('submit', function (b){
-    b.preventDefault();
-    if(formulario.value === ''){
-        alert('No puede estar VACIO!')
-    } else{
-        buscador.submit();
-    }
-})
-fetch('https://api.allorigins.win/get?url=https://api.deezer.com/genre/') //Cuando llamo a busqueda le agrego a la url del endpoint especifico lo que atrape
-
+let genres="https://api.allorigins.win/raw?url=https:https://api.deezer.com/genre/0"
+fetch(genres)
     .then(function (response) {
         return response.json();
     })
-  .then(function (data) {
-        let generos = data.data
-        console.log(generos);
-        let listaGeneros = document.querySelector('.bloquegenero')
-        for (let i = 0; i < generos.length; i++) {
-            listaGeneros.innerHTML += `<div class="generoindividual"><div><a href="detail-genres.html?id=${generos[i].id}"><img  class="foto" src="${generos[i].picture_big}" alt="${generos[i].name}"></a></div><a href="detail-genres.html?id=${generos[i].id}" class="tituloGeneros"> ${generos[i].name}</a></div>`
-        }
+    .then(function(data){
+        console.log(data);
 
+        let info = data.data
+        let section = document.querySelector(".genres");
+        let articles = "";
+
+        for(let i=0; i<5; i++){
+            //construir un elemento de lista
+            articles += `<article>
+                            <img class="imagen" src="${info[i].artist.picture_medium}" alt="">
+                            <h2 class="nombres">genero:<a href="./detail-genres.html${infoArtist[i].id}">${info[i].name}</a></h2>
+                            <p class="nombresgrupo">Artista:<a href="./detail-genres.html${infoArtist[i].id}">${info[i].artist.name}</a></p>
+                            <p class="nombresgrupo">Lanzamiento:${info[i].release_date}</p>
+                        </article>`
+                    }
+                    
+            //capturar el contenedor de la lista
+            
+            
+            
+            //Los elementos están en un array y para obtenerlos hay recorrerlo.
+            console.log(articles);
+            section.innerHTML += articles
+    })
+
+    .catch(function(error){
+        console.log(error);
     })
