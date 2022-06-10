@@ -16,7 +16,7 @@ fetch(tracks)
             articles += `<article>
                             <img class="imagen" src="${info[i].artist.picture_big}" alt="">
                             <h2 class="nombres">Nombre:<a href="./detail-track.html?id=${info[i].id}">${info[i].title}</a></h2>
-                            <p class="nombresgrupo">Artista:<a href="./detail-track.html?id=${info[i].id}">${info[i].artist.name}</a></p>
+                            <p class="nombresgrupo">Artista:<a href="./detail-artist.html?id=${info[i].id}">${info[i].artist.name}</a></p>
                             <p class="nombresgrupo">Lanzamiento:${info[i].release_date}</p>
                         </article>`
                     }
@@ -86,7 +86,7 @@ let Albums="https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/al
                     //construir un elemento de lista
                     articles += `<article>
                                     <img class="imagen" src="${infoAlbums[i].cover}" alt="">
-                                    <h2 class="nombres">Album:<a href="./detail-artist.html?id=${infoAlbums[i].id}">${infoAlbums[i].title}</a></h2>
+                                    <h2 class="nombres">Album:<a href="./detail-album.html?id=${infoAlbums[i].id}">${infoAlbums[i].title}</a></h2>
                                     <p class="nombresgrupo">Top:${infoAlbums[i].position}</p>
                                     <p class="nombres">Escuchas:${infoAlbums[i].id}</p>
                         
