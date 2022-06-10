@@ -8,12 +8,12 @@ fetch(DetalleAlbum)
         console.log(data);
 
         let datos = data.data
-        let section = document.querySelector("contenedordetail");
+        let section = document.querySelector(".detalle");
         let articles = "";
 
         for (let i = 0; i < datos.length; i++) {
             //construir un elemento de lista
-            articles += `<article="detalle">
+            articles += `<article>
                             <h1 class="Nombres">Nombre: ${datos[i].album.title}</h1>
                         <img class="image" src="${datos[i].album.picture}" alt="">
                         </article>
