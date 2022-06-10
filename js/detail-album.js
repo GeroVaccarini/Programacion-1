@@ -21,7 +21,7 @@ fetch(DetalleAlbum)
                                 <p><a class="nombres" href="detail-artist.html"> Genero:${datos[i].album.genre}</a></p>
                                 <p>Lanzamiento del disco: ${datos[i].album.release_date}</p>
                                 <ol>
-                                    <li> ${datos[i].album.tracks<a href="playlist.html" type="submit"><i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
+                                    <li> <a href="playlist.html" type="submit">${datos[i].album.tracks}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
                     </ol >`
                     
                                 }
