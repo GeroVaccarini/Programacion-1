@@ -12,53 +12,50 @@
     <script src="https://kit.fontawesome.com/dd27ef0022.js" crossorigin="anonymous"></script>
     <title>MusicMatch</title>
 </head>
+
 <body>
     <main>
         <header class="contenedor">
             <img src="./img/logo.png" alt="">
             <nav>
-        
+
                 <ul class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="genres.html">Generos</a></li>
                     <li><a href="playlist.html">Playlist</a></li>
                     <li>
                         <form action="search-result.html" method="GET"><input type="text" class="formulario"
-                                name="buscador" placeholder="buscar..."> 
-                                <p class="error-casilla"></p><button type="submit"><i
-                                    class="fa-brands fa-searchengin"></i></button></form>
+                                name="buscador" placeholder="buscar...">
+                            <p class="error-casilla"></p><button type="submit"><i
+                                    class="fa-brands fa-searchengin"></i></button>
+                        </form>
                     </li>
                 </ul>
             </nav>
         </header>
 
-        <nav class="nombrelista">
-            <h2>Top Canciones</h2>
+        <nav class="titulos">
+            <h1>Top Canciones</h1>
         </nav>
         <section class="listas canciones">
-            
+
         </section>
 
-            <nav class="nombrelista">
-                <h2>
-                    Top Albumes
-                </h2>
-            </nav>
-                <article class="lista">
-                    <nav class="albums">
-                    </nav>
-                </article>
-    
-                <article class="lista">
-                    <nav class="nombrelista">
-                        <h2>
-                            Top Artistas
-                        </h2>
-                    </nav>
-                    <nav class="artistas">
-                    </nav>
-                </article>
-     
+        <nav class="titulos">
+            <h2>
+                Top Artistas
+            </h2>
+        </nav>
+        <section class="artistas">
+        </section>
+        <nav class="titulos">
+            <h2>
+                Top Almbum
+            </h2>
+        </nav>
+        <section class="albums">
+        </section>
+
     </main>
     <footer>
 
@@ -77,7 +74,7 @@
             </article>
         </section>
     </footer>
-    <script type="text/javascript"  src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
 </body>
 
 </html>
