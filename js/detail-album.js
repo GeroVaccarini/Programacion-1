@@ -14,14 +14,14 @@ fetch(DetalleAlbum)
         for (let i = 0; i <1; i++) {
             //construir un elemento de lista
             articles += `<article>
-                            <h1 class="Nombres">Nombre: ${data.album.title}</h1>
-                        <img class="image" src="${data.album.picture}" alt="">
+                            <h1 class="nombres">Nombre: ${data.name}</h1>
+                        <img class="image" src="${data.cover_big}" alt="">
                         </article>
                                 <h2><a class="nombres" href="detail-artist.html">${data.artist.name}</a></h2>
-                                <p><a class="nombres" href="detail-artist.html"> Genero:${data.genre.name}</a></p>
-                                <p>Lanzamiento del disco: ${data.album.release_date}</p>
+                                <p><a class="nombres" href="detail-artist.html"> Genero:${data.name}</a></p>
+                                <p>Lanzamiento del disco: ${data.release_date}</p>
                                 <ol>
-                                    <li> <a href="playlist.html" type="submit">${tracks.data.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
+                                    <li> <a href="playlist.html" type="submit">${data.tracks.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
                     </ol >`
                     
                                 }
@@ -31,7 +31,7 @@ fetch(DetalleAlbum)
 
 
         //Los elementos están en un array y para obtenerlos hay recorrerlo.
-        console.log('articles');
+        console.log(articles);
         section.innerHTML += articles
     })
 
