@@ -66,15 +66,16 @@ input {
     flex-wrap: wrap;
     margin: 2%;
     padding: 0%;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', cursive; 
 }
 
-.item {
+.contenedorindex {
     margin: 2%;
     justify-content: space-between;
+    
 }
 
-.item a {
+.contenedorindex a {
     text-decoration: none;
 }
 
@@ -83,6 +84,13 @@ article .nombres {
     font-size: 25px;
     color: aliceblue;
     text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 p {
@@ -90,16 +98,6 @@ p {
     text-align: center;
 
 }
-
-
-.nombresgrupo {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
-    color: aliceblue;
-
-
-}
-
 .titulos {
     color: aliceblue;
     font-family: 'Bebas Neue', cursive;
@@ -117,22 +115,35 @@ p {
     border-radius: 20%;
 }
 
-.itemcaja h2 {
+.contenedorindex {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin: 2%;
+    padding: 0%;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+   
+
+}
+
+
+.contenedorindex h2 {
     border: 1px solid grey;
 
 }
 
-.itemcaja a {
+.contenedorindex a {
     color: aliceblue;
 
 }
 
-.itemcaja a:hover {
+.contenedorindex a:hover {
     color: orange;
 
 }
 
-.itemcaja p {
+.contenedorindex p {
     border: 1px solid orange;
 }
 
@@ -193,12 +204,12 @@ p {
 }
 
 /* DETALLE ALBUM */
-.contenedordetail {
+.detalle{
     display: flex;
     flex-direction: row;
 }
 
-.contenedordetail img {
+.dtimage {
     height: 500px;
     width: 500px;
     margin-left: 20%;
@@ -354,6 +365,7 @@ font-family: 'Bebas Neue', cursive;
 width: 75%;
 margin-left: 10%;
 font-family: 'Bebas Neue', cursive;
+text-overflow: ellipsis;
 }
 
 /* DETAIL GENRES */

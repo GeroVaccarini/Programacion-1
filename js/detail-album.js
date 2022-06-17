@@ -15,7 +15,7 @@ fetch(DetalleAlbum)
             //construir un elemento de lista
             articles += `<article>
                             <h1 class="nombres">Nombre: ${data.name}</h1>
-                        <img class="image" src="${data.cover_big}" alt="">
+                        <img class="dtimage" src="${data.cover_big}" alt="">
                         </article>
                                 <h2><a class="nombres" href="detail-artist.html">${data.artist.name}</a></h2>
                                 <p><a class="nombres" href="detail-artist.html"> Genero:${data.name}</a></p>
