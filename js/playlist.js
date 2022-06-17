@@ -8,7 +8,7 @@ fetch(playlist)
         console.log(data);
 
         let playlist = data.data
-        let section = document.querySelector("");
+        let section = document.querySelector(".playlist");
         let articles = "";
 
         for(let i=0; i<playlist.length; i++){
