@@ -4,7 +4,7 @@ let objeto = qsobj.get("busqueda"); // atrapo el valor search de la variable qso
 console.log(qs);
 console.log(objeto);
 
-let busqueda=`https://api.allorigins.win/raw?url=https://api.deezer.com/search/artist?q=${objeto}` //Cuando llamo a busqueda le agrego a la url del endpoint especifico lo que atrape
+let busqueda=`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q=${objeto}` //Cuando llamo a busqueda le agrego a la url del endpoint especifico lo que atrape
 fetch(busqueda)
     .then(function (response) {
         return response.json();
