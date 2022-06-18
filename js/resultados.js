@@ -1,12 +1,12 @@
 let qs = location.search; // atrapo todo lo que esta despues del html
 let qsobj = new URLSearchParams(qs); // lo traduzco para poder trabajarlo
-let objeto = qsobj.get("busqueda"); // atrapo el valor search de la variable qsobj
+let objeto = qsobj.get("search"); // atrapo el valor search de la variable qsobj
 console.log(qs);
 console.log(objeto);
 
 let busqueda=`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q=${objeto}` //Cuando llamo a busqueda le agrego a la url del endpoint especifico lo que atrape
 fetch(busqueda)
-    .then(function (response) {
+    .then(function(response){
         return response.json();
     })
     .then(function (data) {

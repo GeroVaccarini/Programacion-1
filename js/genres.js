@@ -1,14 +1,14 @@
 
-let genres="https://api.allorigins.win/raw?url=https:https://api.deezer.com/genre/0"
+let genres="https://cors-anywhere.herokuapp.com/https:https://api.deezer.com/genre/0"
 fetch(genres)
-    .then(function (response) {
+    .then(function (response){
         return response.json();
     })
     .then(function(data){
         console.log(data);
 
         let info = data.data
-        let section = document.querySelector(".genres");
+        let section = document.querySelector(".generos");
         let articles = "";
 
         for(let i=0; i<5; i++){

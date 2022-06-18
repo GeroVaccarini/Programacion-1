@@ -1,6 +1,5 @@
-
-let DetalleAlbum = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/302127"
-fetch(DetalleAlbum)
+let DetalleTracks = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/3135556"
+fetch(DetalleTracks)
     .then(function (response) {
         return response.json();
     })
@@ -8,7 +7,7 @@ fetch(DetalleAlbum)
         console.log(data);
 
       
-        let section = document.querySelector(".detalle");
+        let section = document.querySelector(".detalletrack");
         let articles = "";
 
         for (let i = 0; i <1; i++) {

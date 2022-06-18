@@ -1,5 +1,5 @@
 
-let playlist="https://api.allorigins.win/raw?url=https:https://api.deezer.com/playlist/908622995"
+let playlist="https://cors-anywhere.herokuapp.com/https:https://api.deezer.com/playlist/908622995"
 fetch(playlist)
     .then(function (response) {
         return response.json();
