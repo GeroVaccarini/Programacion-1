@@ -1,5 +1,5 @@
-let DetalleTracks = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/3135556"
-fetch(DetalleTracks)
+let detalleTracks = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/3135556"
+fetch(detalleTracks)
     .then(function (response) {
         return response.json();
     })
@@ -13,19 +13,19 @@ fetch(DetalleTracks)
         for (let i = 0; i <1; i++) {
             //construir un elemento de lista
             articles += `<article>
-                            <h1 class="nombres">Nombre: ${data.title}</h1>
-                        <img class="dtimage" src="${data.cover_big}" alt="">
-                        </article>
-                                <h2><a class="nombres" href="detail-artist.html">${data.artist.name}</a></h2>
-                                <p><a class="nombres" href="detail-artist.html"> Genero:${data.name}</a></p>
-                                <p>Lanzamiento del disco: ${data.release_date}</p>
-                                <ol>
-                                    <li> <a href="playlist.html" type="submit">${data.tracks.data.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li>
-                                    <li> <a href="playlist.html" type="submit">${data.tracks.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
-                                    <li> <a href="playlist.html" type="submit">${data.tracks.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
-                                    <li> <a href="playlist.html" type="submit">${data.tracks.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
-                                    <li> <a href="playlist.html" type="submit">${data.tracks.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li>  
-                    </ol >`
+            <h1 class="nombres">Nombre: ${data.title}</h1>
+        <img class="imagen" src="${data.album.cover_big}" alt="">
+        </article>
+                <h2><a class="nombresgrupo" href="detail-artist.html">${data.artist.name}</a></h2>
+                <p><a class="nombresgrupo" href="detail-artist.html"> Genero:${data.name}</a></p>
+                <p>Lanzamiento del disco: ${data.release_date}</p>
+                <ol>
+                    <li> <a href="playlist.html" type="submit">${data.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li>
+                    <li> <a href="playlist.html" type="submit">${data.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
+                    <li> <a href="playlist.html" type="submit">${data.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
+                    <li> <a href="playlist.html" type="submit">${data.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
+                    <li> <a href="playlist.html" type="submit">${data.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li>  
+    </ol >`
                     
                                 }
 
