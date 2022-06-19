@@ -1,4 +1,11 @@
-let detalleTracks = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/3135556"
+let queryString = location.search;
+let datos = new URLSearchParams(queryString);
+let objtrack = datos.get ('id');
+
+
+
+/**let detalleTracks = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/3135556"
+ 
 fetch(detalleTracks)
     .then(function (response) {
         return response.json();
@@ -40,4 +47,4 @@ fetch(detalleTracks)
 
     .catch(function (error) {
         console.log(error);
-    })
+    })*/
