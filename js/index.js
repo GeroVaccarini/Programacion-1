@@ -14,9 +14,9 @@ fetch(datatotal)
     let artista = document.querySelector(".artistas")
 
     for (let i = 0; i < 5; i++) {
-        cancion.innerHTML += `<article> <img class="imagen" src="${Tracks[i].artist.picture_big}" alt="">
-        <h2 class="nombres">Nombre:<a href="./detail-track.html?id=${Tracks[i].name}">${Tracks[i].title}</a></h2>
-        <p class="nombresgrupo">Artista:<a href="./detail-artist.html?id=${Tracks[i].id}">${Tracks[i].artist.name}</a></p>
+        cancion.innerHTML += `<article> <img class="imagen" src="${Tracks[i].artist.picture_big}" alt="${Tracks[i].title}">
+        <h2 class="nombres">Nombre:<a href="./detail-track.html?id=${Tracks[i].id}">${Tracks[i].title}</a></h2>
+        <p class="nombresgrupo">Artista:<a href="./detail-artist.html?id=${Tracks[i].artist.id}">${Tracks[i].artist.name}</a></p>
         <p class="nombresgrupo">Duracion:${Tracks[i].duration}</p>
     </article>`
     }
@@ -24,7 +24,7 @@ fetch(datatotal)
     for (let i = 0; i < 5; i++) {
         album.innerHTML += `<article>
         <img class="imagen" src="${Albums[i].cover}" alt="">
-        <h2 class="nombres">Album:<a href="./detail-album.html?id=${Albums[i].title}">${Albums[i].title}</a></h2>
+        <h2 class="nombres">Album:<a href="./detail-album.html?id=${Albums[i].id}">${Albums[i].title}</a></h2>
         <p class="nombresgrupo">Top:${Albums[i].position}</p>
         <p class="nombres">Escuchas:${Albums[i].id}</p>
 
