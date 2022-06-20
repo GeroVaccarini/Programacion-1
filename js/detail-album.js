@@ -23,7 +23,7 @@ fetch(DetalleAlbum)
                                 <ol>
                                     <li> <a href="playlist.html" type="submit">${data.tracks.data.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li>
                                     <li> <a href="playlist.html" type="submit">${data.tracks.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
-                                    <li> <a href="playlist.html" type="submit">${data.tracks.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
+                                    <li>54yu <a href="playlist.html" type="submit">${data.tracks.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
                                     <li> <a href="playlist.html" type="submit">${data.tracks.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
                                     <li> <a href="playlist.html" type="submit">${data.tracks.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li>  
                     </ol >`
