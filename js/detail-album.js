@@ -31,7 +31,6 @@ fetch(DetalleAlbum)
     let tracksdata = data.tracks.data
     console.log(tracksdata);
     let cancionesAlbum = document.querySelector('#listacanciones')
-    let temas = "";
       for (let i = 0; i<tracksdata.length; i ++) { 
                 
                 cancionesAlbum.innerHTML += `<li><a href="detail-track.html?id=${tracksdata[i].id}" type="submit">${tracksdata[i].title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li>`

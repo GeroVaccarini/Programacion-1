@@ -1,5 +1,27 @@
+let genres = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre`
+fetch(genres)
+    .then(function (response) {
+        return response.json();
+        
+    })
+ 
+     .then(function (data) {
+            let genre = data.data
+            let listaGeneros = document.querySelector(".generos")
+            for (let i = 0; i < genre.length; i++) {
+                
+                listaGeneros.innerHTML += `<article> <img class="imagen" src="${genre[i].picture_big}" alt="${genre[i].title}">
+        <h2 class="nombres">Nombre:<a href="./detail-genres.html?id=${genre[i].id}">${genre[i].name}</a></h2>
+    </article>`
 
-let genres = "https://cors-anywhere.herokuapp.com/https:https://api.deezer.com/genre/"
+            }
+      
+
+    })
+
+
+
+/** let genres = "https://cors-anywhere.herokuapp.com/https:https://api.deezer.com/genre/"
 fetch(genres)
     .then(function (response){
         return response.json();
@@ -33,3 +55,4 @@ fetch(genres)
     .catch(function(error){
         console.log(error);
     })
+*/
