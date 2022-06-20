@@ -23,23 +23,8 @@ fetch(DetalleAlbum)
                         <img class="dtimage" src="${data.cover_big}" alt="">
                         </article>
                         <article class="albumgeneral">
-<<<<<<< HEAD
                                 <h2><a class="nombres nombre" href="detail-artist.html?id=${data.artist.id}">Artista:${data.artist.name}</a></h2>
                                 <p><a class="nombres" href="detail-genres.html?id=${data.genres.data[0].id}"> Genero:${data.genres.data[0].name}</a></p>
-=======
-                                <h2><a class="nombres nombre" href="detail-artist.html">Artista:${data.artist.name}</a></h2>
-                                <p><a class="nombres" href="detail-artist.html"> Genero:${data.name}</a></p>
-                                <p>Lanzamiento del disco: ${data.release_date}</p>
-                                <ol>
-                                    <li> <a href="playlist.html" type="submit">${data.tracks.data.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li>
-                                    <li> <a href="playlist.html" type="submit">${data.tracks.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
-                                    <li>54yu <a href="playlist.html" type="submit">${data.tracks.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
-                                    <li> <a href="playlist.html" type="submit">${data.tracks.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
-                                    <li> <a href="playlist.html" type="submit">${data.tracks.title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li>  
-                    </ol >`
-                    
-                                }
->>>>>>> 4d129001c5729e6b31562c39ed64de9597854534
                                 <p>Lanzamiento del disco: ${data.release_date}</p> 
                                 </article>`
         }                     
