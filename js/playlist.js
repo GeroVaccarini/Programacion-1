@@ -1,34 +1,26 @@
+let recuperoStorage = localStorage.getItem('playlist'); //obtenes de localstorage la propiedad playlist
+let playlist = JSON.parse(recuperoStorage); // pasarlo a JSON para manipularlo
+let listaCanciones = document.querySelector('.playlist');
+console.log(playlist);
+if (recuperoStorage == null || recuperoStorage == "[]") {
+    listaCanciones.innerHTML += '<h1 class="nombres"> ¡No hay canciones! </h1>'
+    console.log(listaCanciones);
+} else {
+    listaCanciones.innerHTML += '<h1 class="nombres"> ¡Tus canciones favoritas! </h1>'
 
-let playlist="https://cors-anywhere.herokuapp.com/https:https://api.deezer.com/playlist/908622995"
-fetch(playlist)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function(data){
-        console.log(data);
+    for (let i = 0; i < playlist.length; i++) {
+        let tracks = "https://cors-anywhere.herokuapp.com/https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/"
+        fetch(tracks + playlist[i])
 
-        let playlist = data.data
-        let section = document.querySelector(".playlist");
-        let articles = "";
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                    console.log(data);
 
-        for(let i=0; i<playlist.length; i++){
-            //construir un elemento de lista
-            articles += `<article>
-                            <h1 class="caciones">Nombre: ${playlist[i].title}</h1>
-                            <img class="image" src="${playlist[i].artist.picture_big}" alt="">
-                            <a class="link" href="detail-artist.html?id=${playlist[i].id}">ir a detalle </a>
-                        </article>`
-                    }
-                    
-            //capturar el contenedor de la lista
-            
-            
-            
-            //Los elementos están en un array y para obtenerlos hay recorrerlo.
-            console.log('articles');
-            section.innerHTML += articles
-    })
+                    listaCanciones.innerHTML += `<a href="detalleCancion.html?id=${data.id}"><li><i class="fas fa-heart"></i> ${data.title}</li></a>`
 
-    .catch(function(error){
-        console.log(error)
-    })
+                
+            })
+    }   
+}

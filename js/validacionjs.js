@@ -1,14 +1,18 @@
- let formulario = document.querySelector(".formulario")
- let formu = document.getElementById('formu')
- console.log(formu);
+ let formulario = document.querySelector('form')
  console.log(formulario)
-formulario.addEventListener('submit', function (b){
-   b.preventDefault();
-     if(formulario.value === ''){
+ formulario.addEventListener('submit', function (e) {
+    let input = document.querySelector(".formulario")
+     console.log("entramos al addEventlistener")
+
+     e.preventDefault();
+     if (input.value == '') {
          alert('No puede estar VACIO!')
-     } else if (formulario.value.length < 2){
+         console.log("entre addEventlistener 1")
+     } else if (input.value.length < 3) {
          alert('Busca algo real')
-     } else{
+         console.log("entre addEventlistener 2")
+     } else {
          formulario.submit();
+         console.log("entre addEventlistener 3")
      }
  })

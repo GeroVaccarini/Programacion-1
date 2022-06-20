@@ -1,5 +1,10 @@
+let queryString = location.search;
+let datos = new URLSearchParams(queryString);
+let objtrack = datos.get('id');
+console.log(objtrack);
 
-let DetalleAlbum = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/302127"
+
+let DetalleAlbum = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/" + objtrack
 fetch(DetalleAlbum)
     .then(function (response) {
         return response.json();
@@ -18,27 +23,18 @@ fetch(DetalleAlbum)
                         <img class="dtimage" src="${data.cover_big}" alt="">
                         </article>
                         <article class="albumgeneral">
-                                <h2><a class="nombres nombre" href="detail-artist.html">Artista:${data.artist.name}</a></h2>
-                                <p><a class="nombres" href="detail-artist.html"> Genero:${data.name}</a></p>
+                                <h2><a class="nombres nombre" href="detail-artist.html?id=${data.artist.id}">Artista:${data.artist.name}</a></h2>
+                                <p><a class="nombres" href="detail-genres.html?id=${data.genres.data[0].id}"> Genero:${data.genres.data[0].name}</a></p>
                                 <p>Lanzamiento del disco: ${data.release_date}</p> 
                                 </article>`
         }                     
     let tracksdata = data.tracks.data
     console.log(tracksdata);
-    let cancionesAlbum = document.querySelector('.tracklist')
+    let cancionesAlbum = document.querySelector('#listacanciones')
     let temas = "";
-      for (let i = 0; i<1; i ++) { 
-      temas += `<article class="albumgeneral">
-                                <ul>
-                                    <li> <a href="playlist.html" type="submit">${tracksdata[1].title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li>
-                                    <li> <a href="playlist.html" type="submit">${tracksdata[2].title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
-                                    <li> <a href="playlist.html" type="submit">${tracksdata[3].title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
-                                    <li> <a href="playlist.html" type="submit">${tracksdata[4].title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
-                                    <li> <a href="playlist.html" type="submit">${tracksdata[5].title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li>  
-                    </ul>
-                    </article>`
-                    console.log(temas);
-                    cancionesAlbum.innerHTML += temas            
+      for (let i = 0; i<tracksdata.length; i ++) { 
+                
+                cancionesAlbum.innerHTML += `<li><a href="detail-track.html?id=${tracksdata[i].id}" type="submit">${tracksdata[i].title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li>`
                                }
 
         //capturar el contenedor de la lista

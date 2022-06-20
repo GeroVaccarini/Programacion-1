@@ -195,6 +195,11 @@ p {
     border: 1px solid grey;
 
 }
+.boton{
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    color: aliceblue;
+}
 
 .contenedordetailartist  a {
     color: aliceblue;
