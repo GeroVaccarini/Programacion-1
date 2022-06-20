@@ -13,11 +13,12 @@ fetch(DetalleAlbum)
 
         for (let i = 0; i <1; i++) {
             //construir un elemento de lista
-            articles += `<article>
+            articles += `<article class="albumgeneral">
                             <h1 class="nombres">Nombre: ${data.title}</h1>
                         <img class="dtimage" src="${data.cover_big}" alt="">
                         </article>
-                                <h2><a class="nombres" href="detail-artist.html">${data.artist.name}</a></h2>
+                        <article class="albumgeneral">
+                                <h2><a class="nombres nombre" href="detail-artist.html">Artista:${data.artist.name}</a></h2>
                                 <p><a class="nombres" href="detail-artist.html"> Genero:${data.name}</a></p>
                                 <p>Lanzamiento del disco: ${data.release_date}</p>
                                 <ol>
@@ -29,6 +30,26 @@ fetch(DetalleAlbum)
                     </ol >`
                     
                                 }
+                                <p>Lanzamiento del disco: ${data.release_date}</p> 
+                                </article>`
+        }                     
+    let tracksdata = data.tracks.data
+    console.log(tracksdata);
+    let cancionesAlbum = document.querySelector('.tracklist')
+    let temas = "";
+      for (let i = 0; i<1; i ++) { 
+      temas += `<article class="albumgeneral">
+                                <ul>
+                                    <li> <a href="playlist.html" type="submit">${tracksdata[1].title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li>
+                                    <li> <a href="playlist.html" type="submit">${tracksdata[2].title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
+                                    <li> <a href="playlist.html" type="submit">${tracksdata[3].title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
+                                    <li> <a href="playlist.html" type="submit">${tracksdata[4].title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li> 
+                                    <li> <a href="playlist.html" type="submit">${tracksdata[5].title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li>  
+                    </ul>
+                    </article>`
+                    console.log(temas);
+                    cancionesAlbum.innerHTML += temas            
+                               }
 
         //capturar el contenedor de la lista
 
@@ -37,6 +58,7 @@ fetch(DetalleAlbum)
         //Los elementos están en un array y para obtenerlos hay recorrerlo.
         console.log(articles);
         section.innerHTML += articles
+        
     })
 
     .catch(function (error) {

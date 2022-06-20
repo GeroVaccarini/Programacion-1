@@ -1,4 +1,6 @@
  let formulario = document.querySelector(".formulario")
+ let formu = document.getElementById('formu')
+ console.log(formu);
  console.log(formulario)
 formulario.addEventListener('submit', function (b){
    b.preventDefault();

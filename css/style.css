@@ -180,9 +180,40 @@ p {
 
 /* DETALLE ARTISTA */
 
+.contenedordetailartist {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin: 2%;
+    padding: 0%;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.contenedordetailartist  h2 {
+    border: 1px solid grey;
+
+}
+
+.contenedordetailartist  a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 30px;
+
+}
+
+.contenedordetailartist a:hover {
+    color: orange;
+
+}
+
+
+
+
 .itemdetalle img {
     height: 500px;
-    width: 900px;
+    width: 600px;
     border-radius: 70px;
     margin-left: 190px;
 }
@@ -195,12 +226,23 @@ p {
 
 .detalleartist li {
     color: aliceblue;
-    width: 75%;
+    width: 70%;
     margin-left: 10%;
     font-family: 'Bebas Neue', cursive;
-
+    font-size: 30px;
+    list-style: none;
+    text-decoration: none;
+   
 
 }
+.imgartist{
+    border-radius: 30%;
+    width: 500px;
+    height: 400px;
+}
+
+
+
 
 /* DETALLE ALBUM */
 .detalle{
@@ -208,9 +250,10 @@ p {
     flex-direction: row;
 }
 
+
 .dtimage {
-    height: 500px;
-    width: 500px;
+    height: 300px;
+    width: 300px;
     margin-left: 20%;
     border-radius: 70px;
 }
@@ -277,11 +320,41 @@ p {
 
 /* DETALLE TRACK */
 
-.itemtrack img {
-    height: 500px;
-    width: 300px;
+.contenedortrack {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    padding: 0%;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+
+.contenedortrack h2 {
+    border: 1px solid grey;
+    text-decoration: none;
+
+}
+
+.contenedortrack a {
+    color: aliceblue;
+text-decoration: none;
+}
+
+.contenedortrack a:hover {
+    color: orange;
+
+}
+
+.contenedortrack p {
+    border: 1px solid orange;
+}
+.itemtrack {
+    height: 100px;
+    width: 500px;
+    border-radius: 10px;
     margin-left: 20%;
-    border-radius: 70px;
 }
 
 .nombrestrack {
@@ -295,34 +368,13 @@ p {
 .nombrestrack a {
     text-decoration: none;
 }
-
-.item img {
-    width: 200px;
-    height: 200px;
-    border-radius: 20%;
-}
-
 .itemcaja h2 {
     border: 1px solid grey;
 
 }
 
-.cajadetail {
-    margin-left: 10%;
-}
-
-.cajadetail a {
-    color: aliceblue;
-
-}
-
-.cajadetail a:hover {
-    color: orange;
-
-}
-
-.cajadetail p {
-    border: 1px solid orange;
+.itemimg {
+    border-radius: 20%;
 }
 
 /* PLAYLIST */
