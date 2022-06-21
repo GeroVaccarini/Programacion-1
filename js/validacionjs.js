@@ -1,7 +1,7 @@
  let formulario = document.querySelector('form')
  console.log(formulario)
  formulario.addEventListener('submit', function (e) {
-    let input = document.querySelector(".formulario")
+     let input = document.querySelector(".formulario")
      console.log("entramos al addEventlistener")
 
      e.preventDefault();

@@ -4,22 +4,21 @@ let objeto = qsobj.get("buscador"); // atrapo el valor search de la variable qso
 console.log(qs);
 console.log(objeto);
 
-let busqueda=`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q=${objeto}` //Cuando llamo a busqueda le agrego a la url del endpoint especifico lo que atrape
+let busqueda = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q=${objeto}` //Cuando llamo a busqueda le agrego a la url del endpoint especifico lo que atrape
 fetch(busqueda)
-.then(function(response){
+    .then(function (response) {
         return response.json();
     })
-.then(function (data) {
+    .then(function (data) {
         console.log(data);
         let titulo = document.querySelector('.titulossearch')
         let artista = data.data
         let listaArtistas = document.querySelector('.artistasSearch')
         if (artista.length == 0) {
-            titulo.innerHTML = 'No hay resultado de busqueda para ' + objeto 
-        
-        }
-        else {
-            titulo.innerHTML = 'Estos son los resultado de busqueda para ' + objeto 
+            titulo.innerHTML = 'No hay resultado de busqueda para ' + objeto
+
+        } else {
+            titulo.innerHTML = 'Estos son los resultado de busqueda para ' + objeto
 
         }
         for (let i = 0; i < artista.length; i++) {
@@ -30,9 +29,8 @@ fetch(busqueda)
             </article>`
         }
     })
-    
-.then(function(){
-document.querySelector('.gif').style.display = "none"
 
-})
+    .then(function () {
+        document.querySelector('.gif').style.display = "none"
 
+    })

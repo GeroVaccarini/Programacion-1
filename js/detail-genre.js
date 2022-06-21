@@ -23,8 +23,8 @@ fetch(detailGenre + objartist + '/artists')
            <li><a href="detail-artist.html?id=${data.data[i].id}" type="submit">${data.data[i].name}<i class="fa-solid fa-heart-circle-plus"></i></button> </li>`
 
         }
-        for (let i = 0; i <1; i++) {
-        titulo.innerHTML += `Genero:` + detailGenre.title
+        for (let i = 0; i < 1; i++) {
+            titulo.innerHTML += `Genero:` + detailGenre.title
         }
         console.log(elementosdelista);
         milista.innerHTML += elementosdelista;

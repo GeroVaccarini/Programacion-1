@@ -12,11 +12,11 @@ fetch(DetalleAlbum)
     .then(function (data) {
         console.log(data);
 
-      
+
         let section = document.querySelector(".detalle");
         let articles = "";
 
-        for (let i = 0; i <1; i++) {
+        for (let i = 0; i < 1; i++) {
             //construir un elemento de lista
             articles += `<article class="albumgeneral">
                             <h1 class="nombres">Nombre: ${data.title}</h1>
@@ -27,23 +27,23 @@ fetch(DetalleAlbum)
                                 <p><a class="nombres" href="detail-genres.html?id=${data.genres.data[0].id}"> Genero:${data.genres.data[0].name}</a></p>
                                 <p>Lanzamiento del disco: ${data.release_date}</p> 
                                 </article>`
-        }                     
-    let tracksdata = data.tracks.data
-    console.log(tracksdata);
-    let cancionesAlbum = document.querySelector('#listacanciones')
-      for (let i = 0; i<tracksdata.length; i ++) { 
-                
-                cancionesAlbum.innerHTML += `<li><a href="detail-track.html?id=${tracksdata[i].id}" type="submit">${tracksdata[i].title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li>`
-                               }
+        }
+        let tracksdata = data.tracks.data
+        console.log(tracksdata);
+        let cancionesAlbum = document.querySelector('#listacanciones')
+        for (let i = 0; i < tracksdata.length; i++) {
 
-        //capturar el contenedor de la lista
+            cancionesAlbum.innerHTML += `<li><a href="detail-track.html?id=${tracksdata[i].id}" type="submit">${tracksdata[i].title}<i class="fa-solid fa-heart-circle-plus"></i></button> </li>`
+        }
 
 
 
-        //Los elementos están en un array y para obtenerlos hay recorrerlo.
+
+
+
         console.log(articles);
         section.innerHTML += articles
-        
+
     })
 
     .catch(function (error) {

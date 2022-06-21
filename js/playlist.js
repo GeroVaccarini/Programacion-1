@@ -16,11 +16,11 @@ if (recuperoStorage == null || recuperoStorage == "[]") {
                 return response.json();
             })
             .then(function (data) {
-                    console.log(data);
+                console.log(data);
 
-                    listaCanciones.innerHTML += `<a href="detalleCancion.html?id=${data.id}"><li><i class="fas fa-heart"></i>${data.title}</li></a>`
+                listaCanciones.innerHTML += `<a href="detalleCancion.html?id=${data.id}"><li><i class="fas fa-heart"></i>${data.title}</li></a>`
 
-                
+
             })
-    }   
+    }
 }
