@@ -15,7 +15,7 @@ fetch(datatotal)
 
     for (let i = 0; i < 5; i++) {  //template string interpolados  /inicio ?qs+clave // operador aritmetico
         cancion.innerHTML += `<article> <img class="imagen" src="${Tracks[i].artist.picture_big}" alt="${Tracks[i].title}">
-        <h2 class="nombres">Nombre:<a href="./detail-track.html?id=${Tracks[i].id}">${Tracks[i].title}</a></h2>
+        <h2 class="nombres">Canción:<a href="./detail-track.html?id=${Tracks[i].id}">${Tracks[i].title}</a></h2>
         <p class="nombresgrupo">Artista:<a href="./detail-artist.html?id=${Tracks[i].artist.id}">${Tracks[i].artist.name}</a></p>
         <p class="nombresgrupo">Duracion:${Tracks[i].duration}</p>
     </article>`

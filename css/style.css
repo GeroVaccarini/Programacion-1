@@ -200,6 +200,11 @@ p {
     font-family: 'Bebas Neue', cursive;
     color: aliceblue;
 }
+.boton2 {
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    color: aliceblue;  
+}
 
 .contenedordetailartist  a {
     color: aliceblue;
@@ -383,9 +388,14 @@ text-decoration: none;
 }
 
 /* PLAYLIST */
-.itemplaylist {
-    margin-left: 20%;
-    width: 50%;
+.playlist {
+    color: aliceblue;
+    width: 70%;
+    margin-left: 10%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    list-style: none;
+    text-decoration: none;
 }
 /* Search */
 .lista { 

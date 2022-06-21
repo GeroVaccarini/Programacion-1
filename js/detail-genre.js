@@ -12,20 +12,23 @@ fetch(detailGenre + objartist + '/artists')
     })
     .then(function (data) {
         console.log(data);
-let info = data.data
+        let info = data.data
         let milista = document.querySelector('#listaArtistas');
-let elementosdelista = ''
+        let titulo = document.querySelector(".titulodetail")
+        let elementosdelista = ''
 
         for (let i = 0; i < detailGenre.length; i++) {
             //construir un elemento de lista
-           milista.innerHTML +=  `<li><a href="detail-artist.html?id=${data.data[i].id}" type="submit">${data.data[i].name}<i class="fa-solid fa-heart-circle-plus"></i></button> </li>
-           <img class="dtimg" src="$data.data[i].picture>`
-        
-        }
+            milista.innerHTML += `<img class="itemimg" src="${data.data[i].picture}">   
+           <li><a href="detail-artist.html?id=${data.data[i].id}" type="submit">${data.data[i].name}<i class="fa-solid fa-heart-circle-plus"></i></button> </li>`
 
-console.log(elementosdelista);
-milista.innerHTML += elementosdelista;
+        }
+        for (let i = 0; i <1; i++) {
+        titulo.innerHTML += `Genero:` + detailGenre.title
+        }
+        console.log(elementosdelista);
+        milista.innerHTML += elementosdelista;
     })
-    .catch(function(error){
-console.log(error)
+    .catch(function (error) {
+        console.log(error)
     })

@@ -24,43 +24,44 @@ fetch(detailTrack + objtrack)
             <article class="contenedortrack">
         <img class="itemimg" src="${data.album.cover_big}" alt="'${data.artist.name}'">
         <h2 class="nombres"><a class="nombrestrack" href="detail-artist.html?id=${data.artist.id}">Artista:${data.artist.name}</a></h2><p class="nombres"><a href="detail-album.html?id=${data.album.id}">Disco:${data.album.title}</a></p>  
-        <p>${data.title} <br><button class="boton">Agregar a playlist</button></p> <i fa-solid fa-heart-circle-plus"></i> 
+        <p>${data.title} <br><button class="boton">Agregar a playlist</button></p> <i fa-solid fa-heart-circle-plus"></i>
+        <br> <a href="playlist.html"><button class="boton2">ver mi playlist</button></a></p>  
         <iframe class="itemtrack" title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/${data.id}" width="1000" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
         </article>
           </article> `
 
         }
         let playlist = []
-let recuperoStorage = localStorage.getItem('playlist'); //obtengo los valores de la propiedad playlist, me lo retorna el metodo
+        let recuperoStorage = localStorage.getItem('playlist'); //obtengo los valores de la propiedad playlist, me lo retorna el metodo
 
 
-if (recuperoStorage == null) { //el null va a devolver falso, quede como un array vacio
-    playlist = [];
-} else {
-    playlist = JSON.parse(recuperoStorage); //si existe algo lo quiero devuelta en json para laburarlo
-}
+        if (recuperoStorage == null) { //el null va a devolver falso, quede como un array vacio
+            playlist = [];
+        } else {
+            playlist = JSON.parse(recuperoStorage); //si existe algo lo quiero devuelta en json para laburarlo
+        }
 
 
-if (playlist.includes(objtrack)) {  // si la cancion esta 
-    document.querySelector('.boton').innerHTML = 'Eliminar de playlist'
-}
+        if (playlist.includes(objtrack)) { // si la cancion esta 
+            document.querySelector('.boton').innerHTML = 'Eliminar de playlist'
+        }
 
 
-let agregar = document.querySelectorAll('button')[1];
-console.log(agregar)
-agregar.addEventListener('click', function () {
-    console.log('entramos al add')
-    if (playlist.includes(objtrack)) {
-        let indiceEnElArray = playlist.indexOf(objtrack);
-        playlist.splice(indiceEnElArray, 1);
-        document.querySelector('.boton').innerHTML = 'Agregar a playlist';
-    } else {
-        playlist.push(objtrack);  //añadimelo a la lista
-        document.querySelector('.boton').innerHTML = 'Eliminar de playlist';
-    }
+        let agregar = document.querySelectorAll('button')[1];
+        console.log(agregar)
+        agregar.addEventListener('click', function () {
+            console.log('entramos al add')
+            if (playlist.includes(objtrack)) {
+                let indiceEnElArray = playlist.indexOf(objtrack);
+                playlist.splice(indiceEnElArray, 1);
+                document.querySelector('.boton').innerHTML = 'Agregar a playlist';
+            } else {
+                playlist.push(objtrack); //añadimelo a la lista
+                document.querySelector('.boton').innerHTML = 'Eliminar de playlist';
+            }
 
-console.log(playlist)
-    let playlistParaStorage = JSON.stringify(playlist);
-    localStorage.setItem('playlist', playlistParaStorage);
-})
+            console.log(playlist)
+            let playlistParaStorage = JSON.stringify(playlist);
+            localStorage.setItem('playlist', playlistParaStorage);
+        })
     })
