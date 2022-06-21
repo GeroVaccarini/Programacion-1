@@ -31,17 +31,17 @@ fetch(detailTrack + objtrack)
 
         }
         let playlist = []
-let recuperoStorage = localStorage.getItem('playlist');
+let recuperoStorage = localStorage.getItem('playlist'); //obtengo los valores de la propiedad playlist, me lo retorna el metodo
 
 
-if (recuperoStorage == null) {
+if (recuperoStorage == null) { //el null va a devolver falso, quede como un array vacio
     playlist = [];
 } else {
-    playlist = JSON.parse(recuperoStorage);
+    playlist = JSON.parse(recuperoStorage); //si existe algo lo quiero devuelta en json para laburarlo
 }
 
 
-if (playlist.includes(objtrack)) {
+if (playlist.includes(objtrack)) {  // si la cancion esta 
     document.querySelector('.boton').innerHTML = 'Eliminar de playlist'
 }
 
@@ -55,7 +55,7 @@ agregar.addEventListener('click', function () {
         playlist.splice(indiceEnElArray, 1);
         document.querySelector('.boton').innerHTML = 'Agregar a playlist';
     } else {
-        playlist.push(objtrack);
+        playlist.push(objtrack);  //añadimelo a la lista
         document.querySelector('.boton').innerHTML = 'Eliminar de playlist';
     }
 
